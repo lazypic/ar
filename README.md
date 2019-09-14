@@ -1,18 +1,19 @@
-# ar
+# AR with Blender
 
 이 리포지터리는 Blender를 이용해서 AR에 활용 가능한 `.usdz` 생성 및 파이프라인 제작에 목표를 두고 있습니다.
 
 ### Xcode 셋팅
+usdz_converter 명령어를 터미널에서 사용하기 위해서는 몇가지 설정이 필요합니다.
 
 Xcode를 실행하고 상단메뉴에서 Xcode > Preferences > Locations 탭
-Command Line Tools: Xcode 10.3(10GB) 로 설정을 바꾼다.
+Command Line Tools: Xcode 10.3(10GB) 로 설정을 바꾸어줍니다.
 
-터미널에서 아래 명령어가 작동되는지 체크한다.
+터미널을 실행하고 아래 명령어가 작동되는지 체크합니다.
 ```bash
 $ xcrun usdz_converter
 ```
 
-아래처럼 출력되면 정상이다.
+아래처럼 출력되면 정상입니다.
 ```
 usdz_converter
 Version: 1.009
@@ -54,7 +55,7 @@ asset_validation: error: No Input file specified
 ```
 
 ### 데이터 Publish
-.obj 이외에 .abc도 지원한다.
+.obj 이외에 .abc도 지원됩니다. 이 포멧은 Blender에서 export 할 수 있습니다.
 
 ```bash
 $ xcrun usdz_converter input.obj output.usdz
@@ -66,4 +67,6 @@ $ xcrun usdz_converter input.obj output.usdz
 ```
 
 ### 응용
+`.usdz` 파일을 링크하면 사파리, 아이폰에서 파일을 인식하여 AR 시뮬레이션을 실험해 볼 수 있습니다.
+
 [아이폰에서 클릭](https://www.apple.com/105/media/us/iphone-11-pro/2019/3bd902e4-0752-4ac1-95f8-6225c32aec6d/ar/iphone-11-pro.usdz)
