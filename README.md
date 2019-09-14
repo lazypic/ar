@@ -56,6 +56,7 @@ asset_validation: error: No Input file specified
 
 ### 데이터 Publish
 .obj 이외에 .abc도 지원됩니다. 이 포멧은 Blender에서 export 할 수 있습니다.
+프로세스에서 사용하는 .png 이미지는 압축해서 사용하지 말아주세요. 알파채널을 포함하여 작업물의 결과를 엉망으로 만들어 버립니다.
 
 ```bash
 $ xcrun usdz_converter input.obj output.usdz
