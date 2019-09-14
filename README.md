@@ -1,5 +1,7 @@
 # ar
 
+이 리포지터리는 Blender를 이용해서 AR에 활용 가능한 `.usdz` 생성 및 파이프라인 제작에 목표를 두고 있습니다.
+
 ### Xcode 셋팅
 
 Xcode를 실행하고 상단메뉴에서 Xcode > Preferences > Locations 탭
