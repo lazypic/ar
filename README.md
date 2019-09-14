@@ -52,8 +52,9 @@ asset_validation: error: No Input file specified
 ```
 
 ### 데이터 Publish
+.obj 이외에 .abc도 지원한다.
 
-```
+```bash
 $ xcrun usdz_converter input.obj output.usdz
 -g CubeMesh
 -normal_map normal.png
@@ -61,3 +62,6 @@ $ xcrun usdz_converter input.obj output.usdz
 -roughness_map roughness.png
 -metallic_map metal.png
 ```
+
+### 응용
+[아이폰에서 클릭](https://www.apple.com/105/media/us/iphone-11-pro/2019/3bd902e4-0752-4ac1-95f8-6225c32aec6d/ar/iphone-11-pro.usdz)
