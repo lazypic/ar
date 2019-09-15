@@ -54,10 +54,12 @@ USAGE:
 asset_validation: error: No Input file specified
 ```
 
-### 데이터 Publish
-.obj 이외에 .abc도 지원됩니다. 이 포멧은 Blender에서 export 할 수 있습니다.
-프로세스에서 사용하는 .png 이미지는 압축해서 사용하지 말아주세요. 알파채널을 포함하여 작업물의 결과를 엉망으로 만들어 버립니다.
+### .usdz 생성
+Blender에서 `.obj` 이외에 `.abc`포멧을 export 할 수 있습니다.
+텍스쳐로 사용하는 `.png` 이미지는 압축해서 사용하지 말아주세요. 알파채널을 포함하여 작업물의 결과를 엉망으로 만들어 버립니다.
+데이터가 준비가 다 되면 usdz_converter 명령을 이용해서 `.usdz`를 만들 수 있습니다.
 
+아래는 `.obj`와 `.png` 텍스쳐를 이용해서 `.usdz`를 만드는 예 입니다.
 ```bash
 $ xcrun usdz_converter input.obj output.usdz
 -g CubeMesh
@@ -67,7 +69,7 @@ $ xcrun usdz_converter input.obj output.usdz
 -metallic_map metal.png
 ```
 
-### 응용
+### 응 용
 `.usdz` 파일을 링크하면 사파리, 아이폰에서 파일을 인식하여 AR 시뮬레이션을 실험해 볼 수 있습니다.
 
 [아이폰에서 클릭](https://www.apple.com/105/media/us/iphone-11-pro/2019/3bd902e4-0752-4ac1-95f8-6225c32aec6d/ar/iphone-11-pro.usdz)
