@@ -1,6 +1,8 @@
-# AR with Blender
+# AR
+목표: Swift + SwiftUI + USD 를 이용한 AR앱 제작
 
-이 리포지터리는 Blender를 이용해서 AR에 활용 가능한 `.usdz` 생성 및 파이프라인 제작에 목표를 두고 있습니다.
+### 참고
+- 이 리포지터리는 Blender를 이용해서 AR에 활용 가능한 `.usdz` 생성 및 파이프라인 제작에 목표를 두고 있습니다.
 
 ### Xcode 셋팅
 usdz_converter 명령어를 터미널에서 사용하기 위해서는 몇가지 설정이 필요합니다.
