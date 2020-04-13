@@ -75,3 +75,7 @@ $ xcrun usdz_converter input.obj output.usdz
 `.usdz` 파일을 링크하면 사파리, 아이폰에서 파일을 인식하여 AR 시뮬레이션을 실험해 볼 수 있습니다.
 
 [아이폰에서 클릭](https://www.apple.com/105/media/us/iphone-11-pro/2019/3bd902e4-0752-4ac1-95f8-6225c32aec6d/ar/iphone-11-pro.usdz)
+
+### Xcode Project 셋팅
+- Root문서 선택 > Signing&Capabilities > Team 선택
+- 아이폰 > 설정 > 일반 > 기기관리 > 개발자앱 선택 > 개발자앱 확인
